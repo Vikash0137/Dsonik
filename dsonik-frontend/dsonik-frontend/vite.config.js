@@ -16,7 +16,7 @@ export default defineConfig({
       },
     },
   ],
-  base: '/dsonik/',
+  base: '/',
   server: {
     port: 5176,
     proxy: {

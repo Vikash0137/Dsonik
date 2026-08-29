@@ -28,10 +28,10 @@ export const resolveImageUrl = (value, fallback = '') => {
     return `${API_ORIGIN}/${normalized}`
   }
 
-  if (normalized.startsWith('/dsonik/')) return normalized
+  if (normalized.startsWith('/dsonik/')) return normalized.replace(/^\/dsonik/, '')
   if (normalized.startsWith('/')) return normalized
 
-  return `/dsonik/${normalized}`
+  return `/${normalized}`
 }
 
 export const getImageValue = (source) => {
